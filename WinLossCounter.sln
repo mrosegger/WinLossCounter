@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinLossCounter", "WinLossCounter\WinLossCounter.csproj", "{12780B8D-88CB-4FD5-B242-9494358C56B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12780B8D-88CB-4FD5-B242-9494358C56B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12780B8D-88CB-4FD5-B242-9494358C56B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12780B8D-88CB-4FD5-B242-9494358C56B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12780B8D-88CB-4FD5-B242-9494358C56B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {076EEF2A-5418-455A-A553-BA6DC7D1F070}
+	EndGlobalSection
+EndGlobal
