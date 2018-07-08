@@ -1,6 +1,6 @@
 ﻿namespace WinLossCounter
 {
-    partial class Form
+    partial class FormCounter
     {
         /// <summary>
         /// Required designer variable.
@@ -50,24 +50,29 @@
             // 
             // winCount
             // 
-            this.winCount.AutoSize = true;
+            this.winCount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.winCount.BackColor = System.Drawing.Color.Transparent;
             this.winCount.Location = new System.Drawing.Point(12, 53);
             this.winCount.Name = "winCount";
             this.winCount.Size = new System.Drawing.Size(46, 17);
             this.winCount.TabIndex = 0;
             this.winCount.Text = "label1";
+            this.winCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lossCount
             // 
-            this.lossCount.AutoSize = true;
+            this.lossCount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lossCount.BackColor = System.Drawing.Color.Transparent;
             this.lossCount.Location = new System.Drawing.Point(399, 53);
             this.lossCount.Name = "lossCount";
             this.lossCount.Size = new System.Drawing.Size(46, 17);
             this.lossCount.TabIndex = 1;
             this.lossCount.Text = "label2";
+            this.lossCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // winBtn
             // 
+            this.winBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.winBtn.Location = new System.Drawing.Point(15, 415);
             this.winBtn.Name = "winBtn";
             this.winBtn.Size = new System.Drawing.Size(75, 23);
@@ -120,13 +125,14 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.loadToolStripMenuItem.Text = "Load";
             // 
             // editToolStripMenuItem
@@ -190,10 +196,11 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.aboutToolStripMenuItem.Text = "About";
             // 
-            // Form
+            // FormCounter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.winPercent);
             this.Controls.Add(this.lossBtn);
@@ -202,7 +209,7 @@
             this.Controls.Add(this.winCount);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
-            this.Name = "Form";
+            this.Name = "FormCounter";
             this.Text = "WinLossCounter";
             this.Resize += new System.EventHandler(this.Form_Resize);
             this.menuStrip.ResumeLayout(false);

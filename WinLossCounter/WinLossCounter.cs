@@ -85,5 +85,10 @@ namespace WinLossCounter
             }
         }
 
+        public void ResetCounter()
+        {
+            wins = 0;
+            losses = 0;
+        }
     }
 }
